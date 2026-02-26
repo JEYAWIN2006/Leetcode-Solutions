@@ -3,8 +3,6 @@ class Solution {
         int n = nums.length;
         boolean[] seen = new boolean[n + 1];
         int duplicate = 0;
-        
-        // Find the duplicate
         for (int num : nums) {
             if (seen[num]) {
                 duplicate = num;
